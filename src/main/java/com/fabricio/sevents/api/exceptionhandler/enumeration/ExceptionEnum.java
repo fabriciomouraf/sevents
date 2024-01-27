@@ -13,13 +13,13 @@ import org.zalando.problem.AbstractThrowableProblem;
 @AllArgsConstructor
 public enum ExceptionEnum {
 
-    GLOBAL_EXPRESSAO_SORT_INVALIDO(new BadRequestAlertException("Ordenação inválida", MacroEvent.class, ErrorCodeEnum.GLOBAL)),
+    GLOBAL_EXPRESSION_SORT_INVALID(new BadRequestAlertException("Ordenação inválida", MacroEvent.class, ErrorCodeEnum.GLOBAL)),
 
     /*
     * Evento Ancora
     * */
-    EVENTO_ANCORA_NOT_FOUNT(new NotFoundAlertException("Evento ancora não encontrado.", MacroEvent.class, ErrorCodeEnum.EVENTO_ANCORA)),
-    EVENTO_ANCORA_NO_CONTENT(new NoContentAlertException("Eventos ancora inexistentes.", MacroEvent.class, ErrorCodeEnum.EVENTO_ANCORA))
+    MACRO_EVENT_NOT_FOUNT(new NotFoundAlertException("Evento macro não encontrado.", MacroEvent.class, ErrorCodeEnum.MACRO_EVENT)),
+    MACRO_EVENT_NO_CONTENT(new NoContentAlertException("Eventos macro inexistentes.", MacroEvent.class, ErrorCodeEnum.MACRO_EVENT))
     
     ;
 

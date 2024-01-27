@@ -6,31 +6,26 @@ import lombok.*;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import java.time.LocalDateTime;
-import java.util.UUID;
 
 @Getter
 @Setter
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class SessaoPersist {
+public class MacroEventPersist {
 
     @NotBlank
     private String name;
 
-    @NotBlank
     private String description;
 
     @NotNull
-    private AvailabilityEnum availability;
-
-    @NotNull
-    private LocalDateTime started_at;
+    private LocalDateTime start_at;
 
     @NotNull
     private LocalDateTime ended_at;
 
     @NotNull
-    private UUID idIngress;
+    private AvailabilityEnum availability;
 
 }

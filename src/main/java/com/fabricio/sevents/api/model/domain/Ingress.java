@@ -27,25 +27,25 @@ public class Ingress extends GenericObject {
     @GeneratedValue
     private UUID id;
 
-    @Column(name="nome")
-    private String nome;
+    @Column(name="name")
+    private String name;
 
-    @Column(name="descricao")
-    private String descricao;
+    @Column(name="description")
+    private String description;
 
     @Enumerated(EnumType.STRING)
-    @Column(name="disponibilidade")
-    private AvailabilityEnum disponibilidade;
+    @Column(name="availability")
+    private AvailabilityEnum availability;
 
-    @Column(name="data_inicio")
-    private LocalDateTime dataInicio;
+    @Column(name="startedAt")
+    private LocalDateTime startedAt;
 
-    @Column(name="data_fim")
-    private LocalDateTime dataFim;
+    @Column(name="endedAt")
+    private LocalDateTime endedAt;
 
-    @Column(name="imagem")
-    private String imagem;
+    @Column(name="image")
+    private String image;
 
-    @Column(name="id_evento")
-    private UUID idEvento;
+    @Column(name="id_event")
+    private UUID idEvent;
 }

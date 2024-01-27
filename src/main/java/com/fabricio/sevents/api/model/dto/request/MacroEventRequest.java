@@ -10,7 +10,7 @@ import java.time.LocalDateTime;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class SessaoRequest extends GenericRequest {
+public class MacroEventRequest extends GenericRequest {
 
     private String name;
 
@@ -18,8 +18,8 @@ public class SessaoRequest extends GenericRequest {
 
     private AvailabilityEnum availability;
 
-    private LocalDateTime startedAt;
+    private LocalDateTime started_at;
 
-    private LocalDateTime endedAt;
+    private LocalDateTime ended_at;
     
 }

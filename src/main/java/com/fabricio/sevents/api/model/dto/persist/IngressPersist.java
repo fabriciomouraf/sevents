@@ -13,7 +13,7 @@ import java.util.UUID;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class SessaoPersist {
+public class IngressPersist {
 
     @NotBlank
     private String name;
@@ -31,6 +31,9 @@ public class SessaoPersist {
     private LocalDateTime ended_at;
 
     @NotNull
-    private UUID idIngress;
+    private String image;
+
+    @NotNull
+    private UUID idEvent;
 
 }

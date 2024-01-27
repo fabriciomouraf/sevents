@@ -5,6 +5,7 @@ import lombok.*;
 
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
+import java.math.BigDecimal;
 import java.time.LocalDateTime;
 import java.util.UUID;
 
@@ -13,7 +14,7 @@ import java.util.UUID;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class SessaoPersist {
+public class PriceSessionPersist {
 
     @NotBlank
     private String name;
@@ -25,12 +26,22 @@ public class SessaoPersist {
     private AvailabilityEnum availability;
 
     @NotNull
-    private LocalDateTime started_at;
+    private BigDecimal price;
 
     @NotNull
-    private LocalDateTime ended_at;
+    private Integer max_quantity;
 
     @NotNull
-    private UUID idIngress;
+    private LocalDateTime startedSale;
+
+    @NotNull
+    private LocalDateTime endedSale;
+
+    private Integer minPerPurchase;
+
+    private Integer maxPerPurchase;
+
+    @NotNull
+    private UUID idSession;
 
 }

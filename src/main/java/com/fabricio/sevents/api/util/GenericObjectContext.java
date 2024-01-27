@@ -1,7 +1,7 @@
 package com.fabricio.sevents.api.util;
 
 import com.fabricio.sevents.api.util.object.Objeto;
-import com.fabricio.sevents.api.util.page.PageBevent;
+import com.fabricio.sevents.api.util.page.PageSevent;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.BeanWrapper;
@@ -45,7 +45,7 @@ public abstract class GenericObjectContext{
           return model;
      }
 
-     protected <T> PageBevent<T> convertToPageBevent(Page<T> p) {
+     protected <T> PageSevent<T> convertToPageSevent(Page<T> p) {
 
           int nextPage = 0;
           int previousPage = 0;
@@ -58,10 +58,10 @@ public abstract class GenericObjectContext{
                previousPage = -1;
           }
 
-          return new PageBevent<T>(p.getNumber(), p.getSize(), p.getTotalPages(), p.getNumberOfElements(), p.getTotalElements(), p.isFirst(), p.hasPrevious(), p.hasNext(), p.hasContent(), p.isFirst(), p.isLast(), nextPage, previousPage, p.getContent());
+          return new PageSevent<T>(p.getNumber(), p.getSize(), p.getTotalPages(), p.getNumberOfElements(), p.getTotalElements(), p.isFirst(), p.hasPrevious(), p.hasNext(), p.hasContent(), p.isFirst(), p.isLast(), nextPage, previousPage, p.getContent());
      }
 
-     protected <E, T> PageBevent<E> convertToPageBevent(Page<T> p, Type type) {
+     protected <E, T> PageSevent<E> convertToPageSevent(Page<T> p, Type type) {
 
           int nextPage = 0;
           int previousPage = 0;
@@ -79,7 +79,7 @@ public abstract class GenericObjectContext{
                list = convertModelMapper(p.getContent(), type);
           }
 
-          PageBevent<E> pageBevent = new PageBevent<E>();
+          PageSevent<E> pageBevent = new PageSevent<E>();
           pageBevent.setFirst(p.isFirst());
           pageBevent.setLast(p.isLast());
           pageBevent.setNumber(p.getNumber());

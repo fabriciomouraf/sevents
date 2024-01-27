@@ -9,7 +9,7 @@ public enum ErrorCodeEnum {
 
      GLOBAL("E00000"),
 
-     EVENTO_ANCORA("E01000"),
+     MACRO_EVENT("E01000"),
      ;
 
      private String code;

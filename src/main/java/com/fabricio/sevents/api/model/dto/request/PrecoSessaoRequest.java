@@ -13,16 +13,16 @@ import java.time.LocalDateTime;
 @NoArgsConstructor
 public class PrecoSessaoRequest extends GenericRequest {
 
-    private String nome;
+    private String name;
 
-    private String descricao;
+    private String description;
 
-    private BigDecimal preco;
+    private BigDecimal price;
 
-    private AvailabilityEnum disponibilidade;
+    private AvailabilityEnum availability;
 
-    private LocalDateTime dataInicio;
+    private LocalDateTime startedSale;
 
-    private LocalDateTime dataFim;
+    private LocalDateTime endedSale;
     
 }

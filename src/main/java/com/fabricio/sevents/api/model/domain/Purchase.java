@@ -38,12 +38,12 @@ public class Purchase extends GenericObject {
     private Status status;
 
     @Column(name = "expires_in")
-    private LocalDateTime expires_in;
+    private LocalDateTime expiresIn;
 
     @PrePersist
     public void prePersist(){
 
-        setExpires_in(LocalDateTime.now().plusMinutes(30));
+        setExpiresIn(LocalDateTime.now().plusMinutes(30));
 
     }
 }

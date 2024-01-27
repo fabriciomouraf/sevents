@@ -42,7 +42,7 @@ public class PriceSession extends GenericObject {
     private BigDecimal price;
 
     @Column(name="max_quantity")
-    private Integer max_quantity;
+    private Integer maxQuantity;
 
     @Column(name="started_sale")
     private LocalDateTime startedSale;

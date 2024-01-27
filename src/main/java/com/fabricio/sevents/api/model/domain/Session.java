@@ -38,10 +38,10 @@ public class Session extends GenericObject {
     private AvailabilityEnum availability;
 
     @Column(name="started_at")
-    private LocalDateTime started_at;
+    private LocalDateTime startedAt;
 
     @Column(name="ended_at")
-    private LocalDateTime ended_at;
+    private LocalDateTime endedAt;
 
     @Column(name="id_ingress")
     private UUID idIngress;

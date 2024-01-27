@@ -1,7 +1,8 @@
-package com.fabricio.sevents.api.model.dto.request;
+package com.fabricio.sevents.api.model.dto.response;
 
 import com.fabricio.sevents.api.model.domain.enumeration.AvailabilityEnum;
-import com.fabricio.sevents.api.util.GenericRequest;
+import com.fabricio.sevents.api.util.GenericResponse;
+import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.*;
 
 import java.time.LocalDateTime;
@@ -10,7 +11,8 @@ import java.time.LocalDateTime;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class SessaoRequest extends GenericRequest {
+@JsonInclude(JsonInclude.Include.NON_NULL)
+public class MacroEventResponse extends GenericResponse {
 
     private String name;
 
@@ -21,5 +23,4 @@ public class SessaoRequest extends GenericRequest {
     private LocalDateTime startedAt;
 
     private LocalDateTime endedAt;
-    
 }

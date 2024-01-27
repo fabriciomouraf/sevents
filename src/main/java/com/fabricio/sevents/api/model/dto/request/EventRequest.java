@@ -10,7 +10,7 @@ import java.time.LocalDateTime;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class SessaoRequest extends GenericRequest {
+public class EventRequest extends GenericRequest {
 
     private String name;
 
