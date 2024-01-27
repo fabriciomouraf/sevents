@@ -109,7 +109,7 @@ public class PageableSevent extends PageRequest {
 
           }
           
-          ExceptionEnum.checkThrow(!result, ExceptionEnum.GLOBAL_EXPRESSAO_SORT_INVALIDO);
+          ExceptionEnum.checkThrow(!result, ExceptionEnum.GLOBAL_EXPRESSION_SORT_INVALID);
           return Sort.by(orders);
           
      }
