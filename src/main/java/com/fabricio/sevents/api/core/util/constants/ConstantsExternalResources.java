@@ -7,32 +7,32 @@ public class ConstantsExternalResources extends ConstantsResources {
     /*
      * Evento Ancora
      */
-    public static final String RESOURCE_EVENTO_ANCORA = API_CONTEXT_PATH + "/evento/ancora";
+    public static final String RESOURCE_MACRO_EVENT = API_CONTEXT_PATH + "/macro/event";
 
     /*
      * Evento
      */
-    public static final String RESOURCE_EVENTO = API_CONTEXT_PATH + "/evento";
+    public static final String RESOURCE_EVENT = API_CONTEXT_PATH + "/event";
 
     /*
      * Ingresso
      */
-    public static final String RESOURCE_INGRESSO = API_CONTEXT_PATH + "/ingresso";
+    public static final String RESOURCE_INGRESS = API_CONTEXT_PATH + "/ingress";
 
     /*
      * Sessao
      */
-    public static final String RESOURCE_SESSAO = API_CONTEXT_PATH + "/sessao";
+    public static final String RESOURCE_SESSION = API_CONTEXT_PATH + "/session";
 
 
     /*
      * Preco Sessao
      */
-    public static final String RESOURCE_PRECO_SESSAO = API_CONTEXT_PATH + "/preco";
+    public static final String RESOURCE_PRICE_SESSION = API_CONTEXT_PATH + "/PRICE";
 
     /*
      * Compra
      */
-    public static final String RESOURCE_COMPRA = API_CONTEXT_PATH + "/compra";
+    public static final String RESOURCE_PURCHASE = API_CONTEXT_PATH + "/purchase";
 
 }

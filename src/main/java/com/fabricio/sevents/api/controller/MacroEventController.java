@@ -18,7 +18,7 @@ import java.util.UUID;
 
 
 @RestController
-@RequestMapping(ConstantsExternalResources.RESOURCE_EVENTO_ANCORA)
+@RequestMapping(ConstantsExternalResources.RESOURCE_MACRO_EVENT)
 @AllArgsConstructor
 @Slf4j
 public class MacroEventController {

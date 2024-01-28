@@ -27,7 +27,7 @@ import java.util.UUID;
 import javax.validation.Valid;
 
 @RestController
-@RequestMapping(ConstantsExternalResources.RESOURCE_INGRESSO)
+@RequestMapping(ConstantsExternalResources.RESOURCE_INGRESS)
 @AllArgsConstructor
 @Slf4j
 public class IngressController {

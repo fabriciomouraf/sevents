@@ -21,7 +21,7 @@ import org.springframework.web.bind.annotation.RestController;
 import javax.validation.Valid;
 
 @RestController
-@RequestMapping(ConstantsExternalResources.RESOURCE_EVENTO)
+@RequestMapping(ConstantsExternalResources.RESOURCE_EVENT)
 @AllArgsConstructor
 @Slf4j
 public class EventController {

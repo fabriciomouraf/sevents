@@ -27,7 +27,7 @@ import java.util.UUID;
 import javax.validation.Valid;
 
 @RestController
-@RequestMapping(ConstantsExternalResources.RESOURCE_PRECO_SESSAO)
+@RequestMapping(ConstantsExternalResources.RESOURCE_PRICE_SESSION)
 @AllArgsConstructor
 @Slf4j
 public class PriceSessionController {
