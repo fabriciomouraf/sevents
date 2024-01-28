@@ -30,7 +30,6 @@ import javax.validation.Valid;
 @RequestMapping(ConstantsExternalResources.RESOURCE_SESSAO)
 @AllArgsConstructor
 @Slf4j
-@CrossOrigin(origins = "*")
 public class SessionController {
 
     private final SessionService sessionService;

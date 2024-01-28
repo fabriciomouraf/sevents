@@ -30,7 +30,6 @@ import javax.validation.Valid;
 @RequestMapping(ConstantsExternalResources.RESOURCE_INGRESSO)
 @AllArgsConstructor
 @Slf4j
-@CrossOrigin(origins = "*")
 public class IngressController {
 
     private final IngressService ingressService;

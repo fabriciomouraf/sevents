@@ -30,7 +30,6 @@ import javax.validation.Valid;
 @RequestMapping(ConstantsExternalResources.RESOURCE_PRECO_SESSAO)
 @AllArgsConstructor
 @Slf4j
-@CrossOrigin(origins = "*")
 public class PriceSessionController {
 
     private final PriceSessionService priceService;
