@@ -14,7 +14,7 @@
 	<name>beevent</name>
 	<description>Projeto para eventos behoh</description>
 	<properties>
-		<java.version>11</java.version>
+		<java.version>17</java.version>
 		<modelmapper.version>3.0.0</modelmapper.version>
 	</properties>
 	<dependencies>
@@ -73,6 +73,18 @@
 			<artifactId>springdoc-openapi-ui</artifactId>
 			<version>1.7.0</version>
 		</dependency>
+
+		<!-- Spring Boot Starter Data Redis -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-redis</artifactId>
+		</dependency>
+		<!-- Jedis Client -->
+		<dependency>
+			<groupId>redis.clients</groupId>
+			<artifactId>jedis</artifactId>
+		</dependency>
+
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
