@@ -1,0 +1,17 @@
+version: '3'
+services:
+  app:
+    image: app
+    ports:
+      - "8080:8080"
+    depends_on:
+      - db
+    command: ["/usr/wait-for", "db:5432", "--", "java", "-jar", "app.jar"]
+
+  db:
+    image: postgres
+    environment:
+      POSTGRES_PASSWORD: minhaSenha
+      POSTGRES_USER: postgres
+    ports:
+      - "5432:5432"
