@@ -1,5 +1,5 @@
 #!/bin/sh
-# wait-for - Um script para aguardar outro serviço estar disponível.
+# wait-for.sh - Um script para aguardar outro serviço estar disponível.
 
 TIMEOUT=15
 QUIET=0
