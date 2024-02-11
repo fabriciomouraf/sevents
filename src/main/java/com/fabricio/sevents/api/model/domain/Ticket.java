@@ -10,7 +10,7 @@ import javax.persistence.*;
 import java.util.UUID;
 
 @Entity
-@Table(name = "entry")
+@Table(name = "ticket")
 @Getter
 @Setter
 @Data
@@ -33,8 +33,8 @@ public class Ticket extends GenericObject {
     @Column(name="status")
     private Status status;
 
-    @Column(name = "id_ticket")
-    private UUID idTicket;
+    @Column(name = "id_ingress")
+    private UUID idIngress;
 
     @Column(name = "id_session")
     private UUID idSession;
