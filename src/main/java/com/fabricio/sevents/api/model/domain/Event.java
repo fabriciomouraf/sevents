@@ -5,11 +5,14 @@ import com.fabricio.sevents.api.util.GenericObject;
 import lombok.*;
 import org.hibernate.annotations.SQLDelete;
 import org.hibernate.annotations.Where;
+import org.springframework.data.redis.core.RedisHash;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.time.LocalDateTime;
 import java.util.UUID;
 
+@RedisHash("Event")
 @Entity
 @Table(name = "event")
 @Getter
@@ -20,7 +23,7 @@ import java.util.UUID;
 @EqualsAndHashCode(callSuper = false)
 @SQLDelete(sql = "UPDATE event SET deleted_at = current_timestamp WHERE id=?")
 @Where(clause = "deleted_at IS NULL")
-public class Event extends GenericObject {
+public class Event extends GenericObject implements Serializable {
 
     @EqualsAndHashCode.Include
     @Id

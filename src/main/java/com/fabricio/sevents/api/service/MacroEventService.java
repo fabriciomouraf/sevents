@@ -1,7 +1,5 @@
 package com.fabricio.sevents.api.service;
 
-import com.fabricio.sevents.api.exceptionhandler.enumeration.ExceptionEnum;
-
 import com.fabricio.sevents.api.model.domain.MacroEvent;
 import com.fabricio.sevents.api.model.dto.request.MacroEventRequest;
 import com.fabricio.sevents.api.model.dto.response.MacroEventResponse;

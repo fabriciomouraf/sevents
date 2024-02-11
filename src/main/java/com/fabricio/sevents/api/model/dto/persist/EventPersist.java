@@ -29,11 +29,11 @@ public class EventPersist {
 
     @NotNull
     @Column(name="started_at")
-    private LocalDateTime started_at;
+    private LocalDateTime startedAt;
 
     @NotNull
     @Column(name="ended_at")
-    private LocalDateTime ended_at;
+    private LocalDateTime endedAt;
 
     @NotNull
     @Column(name="id_macro_event")

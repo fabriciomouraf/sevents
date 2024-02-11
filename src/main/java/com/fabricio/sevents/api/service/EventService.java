@@ -4,6 +4,7 @@ import com.fabricio.sevents.api.model.domain.Event;
 import com.fabricio.sevents.api.model.dto.persist.EventPersist;
 import com.fabricio.sevents.api.model.dto.request.EventRequest;
 import com.fabricio.sevents.api.model.dto.response.EventResponse;
+import com.fabricio.sevents.api.core.redis.repository.EventRedisRepository;
 import com.fabricio.sevents.api.repository.EventRepository;
 import com.fabricio.sevents.api.util.GenericObjectContext;
 import com.fabricio.sevents.api.util.object.Objeto;
@@ -30,13 +31,19 @@ public class EventService extends GenericObjectContext {
 
     private final EventRepository eventRepository;
 
+    private final EventRedisRepository eventRedisRepository;
+
     private final MacroEventService macroEventService;
 
     public EventResponse create(EventPersist persist){
 
         Event event = super.convert(persist, Event.class);
 
-        return convert(eventRepository.save(event));
+        event = eventRepository.save(event);
+
+        eventRedisRepository.save(event);
+
+        return convert(event);
 
     }
 
