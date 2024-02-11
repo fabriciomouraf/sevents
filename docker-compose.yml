@@ -8,6 +8,8 @@ services:
     depends_on:
       - db
       - redis
+    environment:
+      - DB_HOST=db
     networks:
       - sevents-network
 
