@@ -81,7 +81,6 @@ public class EventoAncora extends GenericObject {
 * Abaixo estou usando a entidade Evento Ancora, e estou setando o numero de pagina, limite(que será a quantidade que vai ser exibida), e sort.
 * No sort, basta colocar o nome do atributo da classe Evento Ancora e se quer ordenar por asc ou desc, que irá fazer a ordenação.
 * Caso queira Filtrar a listagem, basta passar o nome do atributo e o valor, para ser feito o filtro e o retorno certo.
-![img.png](img.png)
 
 ### Exemplo do Codigo
 * Foi utilizado o codigo abaixo com as classes utilitárias para evitar problemas com a paginação do spring
